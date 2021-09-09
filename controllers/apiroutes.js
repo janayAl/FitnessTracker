@@ -9,4 +9,9 @@ const port = process.env.PORT || 3000
 //CREATE WORKOUT, post
 //Update/add workout, put
 //read/view workouts, get
+app.post('/workouts, (req, res) => {
+    res.send()
+})
+app.listen(port, () => {
 
+})
