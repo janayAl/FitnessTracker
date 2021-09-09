@@ -47,6 +47,15 @@ const workoutSchema = new mongoose.Schema({
 
 })
 
+// const workouts =mongoose.model('workouts, {
+//workoutName:....etc.
+
+// })
+
+//workout.save().then() => {
+//console.log(workout).catch (error)
+// }
+
 //view and track daily workouts, 
 //view and log multiple workouts "findMany"? 'updateMany? 
 //track by name, type, weight, sets, reps, and duration...distance traveled**//
