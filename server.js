@@ -9,9 +9,9 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"));
+app.use(express.static("public")); //connects to the information in the public folder
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workouts", {
     useNewUrlParser: true,
     useFindAndModify: false
 });
