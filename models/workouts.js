@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+// const workouts =mongoose.model('workouts, {
+//workoutName:....etc.
+
+// })
 //create new schema with the fields (object), name, type, weight, sets, reps, duration and distance if cardio
 const workoutSchema = new mongoose.Schema({
     workoutName: {
@@ -16,26 +20,29 @@ const workoutSchema = new mongoose.Schema({
     weight: {
         type: Number,
         trim: true,
+        default: 0,
         required: "Enter the type of workout" //does it need a boolean instead?
     },
     sets: {
         type: Number,
         trim: true,
+        default: 0,
         required: true //does it need a boolean instead?
     },
     reps: {
         type: Number,
         trim: true,
+        default: 0,
         required: true //does it need a boolean instead?
     },
     duration: {
         type: Number,
-        trim: true,
+        default: 0,
         required: true //does it need a boolean instead?
     },
     distance: {
         type: Number,
-        trim: true,
+        default: 0,
         required: true//does it need a boolean instead?
     },
     day: {
@@ -47,10 +54,6 @@ const workoutSchema = new mongoose.Schema({
 
 })
 
-// const workouts =mongoose.model('workouts, {
-//workoutName:....etc.
-
-// })
 
 //workout.save().then() => {
 //console.log(workout).catch (error)
