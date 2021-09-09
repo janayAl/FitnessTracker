@@ -14,29 +14,29 @@ const workoutSchema = new mongoose.Schema({
         required: "Enter the type of workout" //does it need a boolean instead?
     },
     weight: {
-        type: String,
+        type: Number,
         trim: true,
         required: "Enter the type of workout" //does it need a boolean instead?
     },
     sets: {
-        type: String,
+        type: Number,
         trim: true,
-        required: "Enter the type of workout" //does it need a boolean instead?
+        required: true //does it need a boolean instead?
     },
     reps: {
-        type: String,
+        type: Number,
         trim: true,
-        required: "Enter the type of workout" //does it need a boolean instead?
+        required: true //does it need a boolean instead?
     },
     duration: {
-        type: String,
+        type: Number,
         trim: true,
-        required: "Enter the type of workout" //does it need a boolean instead?
+        required: true //does it need a boolean instead?
     },
     distance: {
-        type: String,
+        type: Number,
         trim: true,
-        required: "Enter the type of workout" //does it need a boolean instead?
+        required: true//does it need a boolean instead?
     },
 
 
