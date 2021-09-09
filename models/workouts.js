@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+
 const workoutSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -10,6 +11,10 @@ const workoutSchema = new mongoose.Schema({
         type: 
 }
 })
+
+//view and track daily workouts, 
+//view and log multiple workouts "findMany"? 'updateMany? 
+//track by name, type, weight, sets, reps, and duration...distance traveled**//
 
 
 
