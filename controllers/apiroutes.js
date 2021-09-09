@@ -1,0 +1,1 @@
+//add routes for the workout database in this file and the other js files in the public folder

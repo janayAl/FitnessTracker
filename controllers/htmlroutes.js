@@ -1,0 +1,1 @@
+//add routes to the stats page and other html documents from the public folder
