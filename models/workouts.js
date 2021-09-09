@@ -10,3 +10,9 @@ const workoutSchema = new mongoose.Schema({
         type: 
 }
 })
+
+
+
+//creates a variable that holds the workout schema information in the models folder titled workouts
+const Workouts = mongoose.model('workouts', workoutSchema)
+module.exports = Workouts; //exports the workouts varialbe that has the model info
