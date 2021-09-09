@@ -1,15 +1,45 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+//create new schema with the fields (object), name, type, weight, sets, reps, duration and distance if cardio
 const workoutSchema = new mongoose.Schema({
-    name: {
+    workoutName: {
         type: String,
         trim: true,
-        required: "Enter a name for the workout"
+        required: "Enter a name for the workout"//does it need a boolean instead?
     },
-    value: {
-        type: 
-}
+    type: {
+        type: String,
+        trim: true,
+        required: "Enter the type of workout" //does it need a boolean instead?
+    },
+    weight: {
+        type: String,
+        trim: true,
+        required: "Enter the type of workout" //does it need a boolean instead?
+    },
+    sets: {
+        type: String,
+        trim: true,
+        required: "Enter the type of workout" //does it need a boolean instead?
+    },
+    reps: {
+        type: String,
+        trim: true,
+        required: "Enter the type of workout" //does it need a boolean instead?
+    },
+    duration: {
+        type: String,
+        trim: true,
+        required: "Enter the type of workout" //does it need a boolean instead?
+    },
+    distance: {
+        type: String,
+        trim: true,
+        required: "Enter the type of workout" //does it need a boolean instead?
+    },
+
+
 })
 
 //view and track daily workouts, 
