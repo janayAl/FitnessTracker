@@ -38,6 +38,11 @@ const workoutSchema = new mongoose.Schema({
         trim: true,
         required: true//does it need a boolean instead?
     },
+    day: {
+        type: String,
+        trim: true,
+        required: true //does it need a boolean instead?
+    },
 
 
 })
