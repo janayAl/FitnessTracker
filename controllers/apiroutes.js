@@ -1,4 +1,5 @@
 const express = require('express')
+const { db } = require('../models/workouts')
 const app = express()
 const port = process.env.PORT || 3000
 
@@ -9,6 +10,13 @@ const port = process.env.PORT || 3000
 //CREATE WORKOUT, post
 //Update/add workout, put
 //read/view workouts, get
+
+app.get('/api/workouts', req, res) => {
+    db.workout.find({}).then(dbworkout => {
+
+    })
+}
+
 app.post('/workouts, (req, res) => {
     res.send()
 })
