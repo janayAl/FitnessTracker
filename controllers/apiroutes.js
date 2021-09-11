@@ -12,8 +12,10 @@ const port = process.env.PORT || 3000
 //read/view workouts, get
 
 app.get('/api/workouts', req, res) => {
-    db.workout.find({}).then(dbworkout => {
-
+    db.Workout.find({}).then(dbWorkout => {
+        dbWorkout.forEach(workout => {
+            //display or return workout?
+        })
     })
 }
 
