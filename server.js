@@ -13,11 +13,14 @@ app.use(express.static("public")); //connects to the information in the public f
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
     useNewUrlParser: true,
-
-});
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+}
+);
 
 // routes
-app.use(require("./controllers/apiroutes.js")); 
+app.use(require("./controllers/apiroutes.js"));
 app.use(require("./controllers/htmlroutes.js"))
 
 app.listen(PORT, () => {
