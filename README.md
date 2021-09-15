@@ -6,3 +6,5 @@ The user is able to add a workout and record the weight, reeps, sets, and durati
 deployed link: https://dry-fortress-22156.herokuapp.com/
 
 github repo: https://github.com/janayAl/FitnessTracker
+
+![Screen Shot 2021-09-15 at 8 06 19 AM](https://user-images.githubusercontent.com/82891366/133438811-bef7ae24-5213-4a53-a29d-c8d960f66b9e.png)
